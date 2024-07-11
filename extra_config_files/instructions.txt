@@ -1,0 +1,2 @@
+Move "dev.exs" and "test.exs" to conduit/config/
+Alter the "password" field to your postgres password

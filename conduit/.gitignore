@@ -35,6 +35,6 @@ conduit-*.tar
 npm-debug.log
 /assets/node_modules/
 
-# Há credenciais para geração de banco nesses arquivos, coloque os adicionais providenciados para gerar seu próprio banco
+# These files are provided in the 'extra_config_files' folder, there are also instructions there.
 /config/dev.exs
 /config/test.exs
