@@ -13,7 +13,12 @@ defmodule ConduitWeb.UsersController do
     end
   end
 
-  def login() do
+  def login(conn, params) do
+    with {:ok, user} <- Users.login(params) do
+      conn
+      |> put_status(:ok)
+      |> render(:login, user: user)
+    end
   end
 
   def show() do
